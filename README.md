@@ -5,3 +5,4 @@ another changes
 fetch all
 new
 cotcot
+:fish:
