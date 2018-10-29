@@ -7,3 +7,4 @@ new
 cotcot
 :fish:
 :bear:
+:egg:
