@@ -3,12 +3,18 @@ set -e
 
 [ -z "$1" ] && echo "You must supply the VERSION to release" && exit 1
 
-read -p "This will DELETE UNSTAGED/STAGED changes. Proceed? (yN) " -n 1 -r
+read -p "This will STASH UNSTAGED/STAGED changes. Proceed? (yN) " -n 1 -r
 
 if [[ ! $REPLY =~ ^[Yy]$ ]]
 then
     exit 1
 fi
+
+echo "### Stash all local changes"
+git stash
+
+echo "### Pull all changes"
+git pull
 
 echo "### Checkout and reset master branch"
 git checkout master
