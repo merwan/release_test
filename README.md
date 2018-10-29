@@ -6,3 +6,4 @@ fetch all
 new
 cotcot
 :fish:
+:bear:

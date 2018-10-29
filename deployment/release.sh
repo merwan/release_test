@@ -13,8 +13,8 @@ fi
 echo "### Stash all local changes"
 git stash
 
-echo "### Pull all changes"
-git pull
+echo "### Fetch all remote data"
+git fetch --all
 
 echo "### Checkout and reset master branch"
 git checkout master
