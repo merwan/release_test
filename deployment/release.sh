@@ -11,7 +11,7 @@ then
 fi
 
 echo "### Download new data from origin"
-git fetch origin
+git fetch --all
 
 echo "### Checkout and reset master branch"
 git checkout master
