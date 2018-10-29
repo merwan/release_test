@@ -10,12 +10,15 @@ then
     exit 1
 fi
 
-echo "### Download new data from origin"
-git fetch --all
+echo "### Download new data from origin/master"
+git fetch origin master
 
 echo "### Checkout and reset master branch"
 git checkout master
 git reset --hard origin/master
+
+echo "### Download new data from origin/production"
+git fetch origin production
 
 echo "### Checkout and reset production branch"
 git checkout production
