@@ -10,6 +10,9 @@ then
     exit 1
 fi
 
+echo "### Download new data from origin"
+git fetch origin
+
 echo "### Checkout and reset master branch"
 git checkout master
 git reset --hard origin/master
